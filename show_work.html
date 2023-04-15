@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>All Phones Products</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+  
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="index.html" class="w3-bar-item w3-button w3-wide">ALL PHONES</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="about_us.html" class="w3-bar-item w3-button">ABOUT</a>
+      <a href="team.html" class="w3-bar-item w3-button"><i class="fa fa-user"></i> TEAM</a>
+      <a href="show_work.html" class="w3-bar-item w3-button"><i class="fa fa-th"></i> PRODUCT</a>
+      <a href="signup.html" class="w3-bar-item w3-button"><i class="fa fa-sign-in"></i> SIGN UP</a>
+      <a href="contact.html" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="#" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="open_menu()">
+      <i class="fa fa-bars"></i>
+      </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+
+
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" id="mySidebar">
+    <a href="" onclick="close_menu()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+    <a href="about_us.html" onclick="close_menu()" class="w3-bar-item w3-button">ABOUT</a>
+    <a href="team.html" onclick="close_menu()" class="w3-bar-item w3-button">TEAM</a>
+    <a href="show_work.html" onclick="close_menu()" class="w3-bar-item w3-button">PRODUCT</a>
+    <a href="signup.html" onclick="close_menu()" class="w3-bar-item w3-button">SIGN UP </a>
+    <a href="contact.html" onclick="close_menu()" class="w3-bar-item w3-button">CONTACT</a>
+  </nav>
+  <div id="modal01" class="w3-modal w3-black" >
+    <span class="w3-button w3-xxlarge w3-black  w3-display-topright" onclick="OnHideInfo()" title="Close Modal Image">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image" alt="product" src="#">
+      <p id="caption" class="w3-opacity w3-large"></p>
+    </div>
+  </div>
+<!-- Header with full-height image -->
+<!-- Team Section -->
+<div class="w3-container team">
+  <h3 class="w3-center">OUR PRODUCT</h3>
+  <p class="w3-center w3-large"><u>We sell</u></p>
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="css/phonenew.jpeg" alt="John" class="abt_img">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="onClick(this)"><i class="fa fa-shopping-cart"></i> Buy</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="css/phonenew.jpeg" alt="Jane" class="abt_img">
+        <div class="w3-container">
+          <h3>Anja Doe</h3>
+          
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="onClick(this)"><i class="fa fa-shopping-cart"></i> Buy</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="css/phonenew.jpeg" alt="Mike" class="abt_img">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="onClick(this)"><i class="fa fa-shopping-cart"></i> Buy</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card">
+        <img src="css/phonenew.jpeg" alt="Dan" class="abt_img">
+        <div class="w3-container">
+          <h3>Dan Star</h3>
+          
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+          <p><button class="w3-button w3-light-grey w3-block" onclick="onClick(this)"><i class="fa fa-shopping-cart"></i> Buy</button></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-64">
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+  <p>@2023 <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">All Phones</a></p>
+</footer>
+ 
+<script  src="js/main.js"></script>
+
+</body>
+</html>
+
+
+
+
