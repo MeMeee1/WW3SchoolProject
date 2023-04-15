@@ -1,6 +1,5 @@
 //custom message that shows the user he/she should input their birthdate
 var ageInput = document.getElementById("ageInput");
-ageInput.setCustomValidity("Please enter your birthdate in the format MM/DD/YYYY.");
 ///
 function ShowDateField()
 {
@@ -28,8 +27,7 @@ function HideDateField()
     
     
     // Toggle between showing and hiding the sidebar when clicking the menu icon
-    var mySidebar = document.getElementById("mySidebar");
-    
+    var mySidebar = document.querySelector("#mySidebar");
     function open_menu() {
       if (mySidebar.style.display === 'block') {
         mySidebar.style.display = 'none';
