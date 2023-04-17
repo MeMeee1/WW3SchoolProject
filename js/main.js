@@ -15,11 +15,11 @@ function HideDateField()
   }
   function onClick(element) {
       var get_prompt=window.prompt("Are you sure you want to buy this item?");
-      if(get_prompt == "Yes")
+      if(get_prompt == "Yes" || get_prompt == "yes")
       {
         window.alert("Thanks for purchasing");
       }
-      else if(get_prompt == "No")
+      else if(get_prompt == "No" || get_prompt == "no")
       {
         window.alert("Select another item");
       }
